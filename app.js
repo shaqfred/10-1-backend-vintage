@@ -10,4 +10,8 @@ app.get("/", (request, response) => {
   response.send("Welcome to Vintage Connect Retro");
 });
 
+app.get("*", (request, response) => {
+  response.status(404).send("Page not found");
+});
+
 module.exports = app;
