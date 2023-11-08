@@ -1,4 +1,4 @@
-const db = require("../db/dbConfig");
+const db = require("../dbConfig");
 
 const getAllVintage = async () => {
   try {

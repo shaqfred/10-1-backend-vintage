@@ -8,13 +8,14 @@ const cn = {
   user: process.env.PG_USER,
 };
 
+// db.connect()
+//   .then((obj) => {
+//     console.log("Postgres connection is established");
+//   })
+//   .catch((e) => {
+//     console.log("ERROR:", e.message || e);
+//   });
+
 const db = pgp(cn);
 
-db.connect()
-  .then((obj) => {
-    console.log("Postgres connection is established");
-  })
-  .catch((e) => {
-    console.log("ERROR:", e.message || e);
-  });
 module.exports = db;
