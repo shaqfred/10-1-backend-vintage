@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 
+const app = express();
 const vintageControllers = require("./Controllers/vintageControllers.js");
 
-const app = express();
 
 app.use(cors());
 app.use(express.json());

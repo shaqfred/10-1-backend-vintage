@@ -8,9 +8,9 @@ const getAllVintage = async () => {
     return error;
   }
 };
-const getVintage = async (id) => {
+const getVintageItemByID = async (id) => {
   try {
-    const oneVintage = await db.one("SELECT * FROM vintage WHERE id=$1", id);
+    const oneVintage = await db.oneOrNone("SELECT * FROM vintage WHERE id=$1", id);
     return oneVintage;
   } catch (error) {
     return error;
@@ -28,4 +28,4 @@ const createVintage = async (vintage) => {
   }
 };
 
-module.exports = { getAllVintage, getVintage, createVintage };
+module.exports = { getAllVintage, getVintageItemByID, createVintage };

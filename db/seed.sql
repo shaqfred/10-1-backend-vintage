@@ -5,4 +5,4 @@ INSERT INTO
     VALUES
         ('flapper dress','party','dress', 90),
         ('cargo jacket','casual','coats', 70),
-        ('hoodie','casual', 'coats', 20),
+        ('hoodie','casual', 'coats', 20);
