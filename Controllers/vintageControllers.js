@@ -6,6 +6,7 @@ const {
   getVintage,
   createVintage,
 } = require("../db/queries/vintage.js");
+
 const { checkPrice, checkName } = require("../validations/checkVintage.js");
 
 //Get all vintage//
